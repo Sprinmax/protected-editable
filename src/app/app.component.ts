@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AuthService } from './services/auth.service';
+
 
 
 
@@ -13,10 +15,18 @@ export class AppComponent {
     { title: 'Perfil', url: '/profile', icon: 'person' },
     { title: 'Llamar', url: '/calling', icon: 'call' },
     { title: 'Localizame', url: '/localizame', icon: 'location' },
-    { title: 'Restablecer Contraseña', url: '/passwordreset', icon: 'refresh-circle' },
-    { title: 'Logout', url:'/home/logout()' , icon: 'person' }
+    { title: 'Pagos', url:'/pago' , icon: 'card' },
+    { title: 'Restablecer Contraseña', url: '/passwordreset', icon: 'refresh-circle' }
   ];
-  constructor() {}
+  constructor
+  (
+    private auth: AuthService,
+  ) { }
+
+  logout()
+  {
+    this.auth.signOut();
+  }
 }
 
  

@@ -3,9 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\calling",
+    "\\src\\app\\home",
+    "\\src\\app\\login",
+    "\\src\\app\\models",
     "\\src\\app\\profile",
-    "\\src\\environments"
+    "\\src\\assets",
+    "\\src\\assets\\imgs"
   ],
-  "SelectedNode": "\\src\\app\\app.component.ts",
+  "SelectedNode": "\\src\\app\\home\\home.page.scss",
   "PreviewInSolutionExplorer": false
 }

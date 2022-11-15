@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar>
+   <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>¿A quien llamamos?</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,7 +12,7 @@
 </ion-content>
 
 <ion-content>
-  <ion-button href="https://wa.me/{{user?.userTelFav}}" color="success"> 
+  <ion-button href="https://wa.me/{{user?.userTelFav}}?text={{user?.userMessage}} " color="success"> 
     <ion-icon name="logo-whatsapp"></ion-icon>
   </ion-button>
 </ion-content>
@@ -29,6 +32,6 @@
 <ion-content>
 
   <div id="container">
-  <button ion-button [routerLink]="['/home']" class="btn">Volver</button>
+  <button ion-button [routerLink]="['/profile']" class="btn">Ver Perfil</button>
   </div>
 </ion-content>

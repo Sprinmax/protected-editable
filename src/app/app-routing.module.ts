@@ -56,6 +56,10 @@ const routes: Routes = [
     path: 'calling',
     loadChildren: () => import('./calling/calling.module').then( m => m.CallingPageModule),
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'pago',
+    loadChildren: () => import('./pago/pago.module').then( m => m.PagoPageModule)
   }
 ];
 

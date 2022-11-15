@@ -3,7 +3,12 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>Protected</ion-list-header>
+        
+          <ion-list-header>
+          <ion-icon size="large" src="../assets/icon/PPF.svg"></ion-icon>
+          Protected
+          </ion-list-header>
+          
           <ion-note>Apoyando a tu seguridad </ion-note>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
@@ -13,6 +18,12 @@
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
+        <ion-menu-toggle auto-hide="false">
+         <ion-item (click)="logout()">
+           <ion-icon name= "person"></ion-icon>
+           <p id="p0"> Logout </p>
+         </ion-item>
+        </ion-menu-toggle>
       </ion-content>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>
