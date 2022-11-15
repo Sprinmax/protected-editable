@@ -59,7 +59,8 @@ export class AuthService
           this.afauth.signOut();
         } else {
           loading.dismiss();
-          this.router.navigate(['/home']);
+          //donde mandar al logear
+          this.router.navigate(['/calling']);
       }
     })
     .catch(error => {

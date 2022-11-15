@@ -20,6 +20,20 @@
           <ion-label position="stacked"> Telefono </ion-label>
           <ion-input required type ="tel" [(ngModel)]="phone" name="phone"></ion-input>
         </ion-item>
+         <ion-item>
+          <ion-label position="stacked"> Nombre de Contacto Preferido </ion-label>
+          <ion-input required type ="string" [(ngModel)]="favorite" name="favorite"></ion-input>
+        </ion-item>
+         <ion-item>
+          <ion-label position="stacked"> Telefono de Contacto Preferido </ion-label>
+          <ion-input required type ="tel" [(ngModel)]="telfav" name="telfav"></ion-input>
+        </ion-item>
+         <ion-item>
+          <ion-label position="stacked"> Mensaje de alerta a tu contacto </ion-label>
+          <ion-input required type ="text" [(ngModel)]="mensaje" name="mensaje"></ion-input>
+        </ion-item>
+
+
         <ion-item>
         <ion-button type= "submit" expand="block" shape= "round" (click)="updateProfile()"> Actualizar Perfil </ion-button>
         </ion-item>

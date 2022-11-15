@@ -9,8 +9,14 @@
     <ion-card-content>
       <h2>{{user?.userName}}</h2>
       <p>{{user?.userEmail}}</p>
-       <p>{{user?.userPhone}}</p>
+      <p>{{user?.userPhone}}</p>
       <p>{{user?.createdAt | date}}</p>
+      <h2>Contacto Favorito: </h2>
+      <p>{{user?.userFav}}</p>
+      <h2>Telefono del Contacto:</h2>
+      <p>{{user?.userTelFav}}</p>
+      <h2>Mensaje Predefinido:</h2>
+      <p>{{user?.userMessage}}</p>
     </ion-card-content>
   </ion-card>
 

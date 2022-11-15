@@ -6,4 +6,7 @@ export interface User
   userPhone: string;
   userPhoto: string;
   createdAt: number;
+  userTelFav: string;
+  userFav: string;
+  userMessage: string;
 }

@@ -16,6 +16,9 @@ export class ProfileEditPage implements OnInit
   name:string;
   email:string;
   phone:string;
+  favorite: string;
+  telfav: string;
+  mensaje: string;
 
   constructor
   (
@@ -33,6 +36,9 @@ export class ProfileEditPage implements OnInit
       this.name = user.userName;
       this.email = user.userEmail;
       this.phone = user.userPhone;
+      this.favorite = user.userFav;
+      this.telfav = user.userTelFav;
+      this.mensaje = user.userMessage;
     })
   }
 
@@ -51,7 +57,10 @@ export class ProfileEditPage implements OnInit
       'userName': this.name,
       'userEmail': this.email,
       'userPhone' : this.phone,
-      'editAt': Date.now()
+      'editAt': Date.now(),
+      'userFav' : this.favorite,
+      'userTelFav' : this.telfav,
+      'userMessage' : this.mensaje
     },{merge: true})
     .then(()=>{
       loading.dismiss();

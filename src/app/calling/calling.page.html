@@ -5,7 +5,13 @@
 </ion-header>
 
 <ion-content>
-  <a href="tel:{{user?.userPhone}}" class="btn"> {{user?.userName}} </a>
+  <a href="tel:{{user?.userTelFav}}" class="btn"> {{user?.userFav}} </a>
+</ion-content>
+
+<ion-content>
+  <ion-button href="https://wa.me/{{user?.userTelFav}}" color="success"> 
+    <ion-icon name="logo-whatsapp"></ion-icon>
+  </ion-button>
 </ion-content>
 
 <ion-content>
