@@ -60,6 +60,10 @@ const routes: Routes = [
   {
     path: 'pago',
     loadChildren: () => import('./pago/pago.module').then( m => m.PagoPageModule)
+  },
+  {
+    path: 'botonllamar',
+    loadChildren: () => import('./botonllamar/botonllamar.module').then( m => m.BotonllamarPageModule)
   }
 ];
 
