@@ -3,40 +3,48 @@
    <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>¿A quien llamamos?</ion-title>
+    <ion-title>¿A quien llamamos?
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-
-
 <ion-content>
-  <a href="tel:{{user?.userTelFav}}" class="btn"> {{user?.userFav}} </a>
+  <a href="tel:{{user?.userTelFav}}" class="btn"> {{user?.userFav}}
+  </a>
 </ion-content>
 
 <ion-content>
-  <ion-button href="https://wa.me/{{user?.userTelFav}}?text={{user?.userMessage}} " color="success"> 
-    <ion-icon name="logo-whatsapp"></ion-icon>
-  </ion-button>
+  <a href="https://wa.me/{{user?.userTelFav}}?text={{user?.userMessage}}" class="btn">
+  {{user?.userFav}}
+      <ion-icon slot="icon-only" name="logo-whatsapp" size="large">
+    </ion-icon>
+  </a>
 </ion-content>
 
 <ion-content>
-  <a href="tel:911" class="btn">Policia</a>
+   <ion-button href= "tel:911"> 
+   <ion-img src="../assets/imgs/1548374171.svg" alt="Ambulancia">
+    </ion-img>
+   </ion-button>
 </ion-content>
 
 <ion-content>
-  <a href="tel:911" class="btn">Ambulancia</a>
+  <div>
+   <ion-button href= "tel:911"> 
+   <ion-img src="../assets/imgs/1546021374.svg" alt="Policia">
+    </ion-img>
+   </ion-button>
+   </div>
 </ion-content>
 
 <ion-content>
-  <a href="tel:911" class="btn">Bomberos</a>
+  <div>
+   <ion-button href= "tel:911"> 
+   <ion-img src="../assets/imgs/firefight.svg" alt="Bombero">
+    </ion-img>
+   </ion-button>
+   </div>
 </ion-content>
 
-<ion-content>
-
-  <div id="container">
-  <button ion-button [routerLink]="['/profile']" class="btn">Ver Perfil</button>
-  </div>
-</ion-content>
 
 
-</body>

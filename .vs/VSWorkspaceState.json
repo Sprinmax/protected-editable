@@ -5,8 +5,10 @@
     "\\src\\app",
     "\\src\\app\\botonllamar",
     "\\src\\app\\calling",
+    "\\src\\assets",
+    "\\src\\assets\\icon",
     "\\src\\assets\\imgs"
   ],
-  "SelectedNode": "\\src\\app\\botonllamar\\botonllamar.page.scss",
+  "SelectedNode": "\\src\\app\\calling\\calling.page.scss",
   "PreviewInSolutionExplorer": false
 }
