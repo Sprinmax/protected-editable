@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color= "primary">
    <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -8,27 +8,28 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+
+
+<ion-content color="dark">
   <a href="tel:{{user?.userTelFav}}" class="btn"> {{user?.userFav}}
   </a>
 </ion-content>
 
-<ion-content>
+<ion-content color="dark">
   <a href="https://wa.me/{{user?.userTelFav}}?text={{user?.userMessage}}" class="btn">
-  {{user?.userFav}}
-      <ion-icon slot="icon-only" name="logo-whatsapp" size="large">
+      <ion-icon name="logo-whatsapp" size="large">
     </ion-icon>
   </a>
 </ion-content>
 
-<ion-content>
+<ion-content color="dark">
    <ion-button href= "tel:911"> 
    <ion-img src="../assets/imgs/1548374171.svg" alt="Ambulancia">
     </ion-img>
    </ion-button>
 </ion-content>
 
-<ion-content>
+<ion-content color="dark">
   <div>
    <ion-button href= "tel:911"> 
    <ion-img src="../assets/imgs/1546021374.svg" alt="Policia">
@@ -37,7 +38,7 @@
    </div>
 </ion-content>
 
-<ion-content>
+<ion-content color="dark">
   <div>
    <ion-button href= "tel:911"> 
    <ion-img src="../assets/imgs/firefight.svg" alt="Bombero">
@@ -45,6 +46,5 @@
    </ion-button>
    </div>
 </ion-content>
-
 
 
